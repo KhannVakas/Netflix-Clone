@@ -350,6 +350,7 @@ input[type="radio"]{
     }
     .header-content h1 span {
         display: inline;
+        flex-wrap: wrap;
         white-space: wrap;
         width: 100%;
     }
