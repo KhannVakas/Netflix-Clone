@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: #fff;
+
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/main-image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #e50914;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin: 18px 30px 0 0;
+    cursor: pointer;
+}
+.header{
+    border-bottom: 7px solid #333;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+ /* .header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    
+ } */
+.header-content h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: bolder;
+    
+}
+.header-content h1 span {
+    display: block;
+    white-space: nowrap;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.header-content p{
+    font-weight: 350;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+/* .signup{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+} */
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup input{
+    padding: 15px 14px;
+    width: 50%;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.5px solid white;
+}
+.signup input::placeholder{
+    color: #b3b3b3;
+}
+.signup button{
+    padding: 14px 20px;
+    font-size: 23px;
+    font-weight: 501;
+    border-radius: 4px;
+    background: #e50914;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+   .signup button i{
+    position: relative;
+    top: 10%;
+    margin-top: -4px;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 20px; 
+    /* vertical-align: middle; */
+   }
+    /* .signup button {
+        padding: 15px 20px;
+        font-size: 26px;
+        border-radius: 4px;
+        background: #db0001;
+        border: none;
+        outline: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup button i {
+        margin-left: 10px;
+        font-size: 18px;
+        vertical-align: middle;
+    } */
+.features{
+    /* border-top: 2px solid red; */
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border-top: 7px solid #333; */
+    padding: 50px 2px;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20%;
+}
+.image-col{
+    flex-basis: 50%;
+    margin-bottom: 20%;
+}
+.image-col img,
+.image-col video{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.text-col h1{
+    font-size: 50px;
+    font-weight: 730;
+    margin-bottom: 20px;
+}
+.text-col span{
+    display: block;
+}
+.text-col p{
+    line-height: 25px;
+    font-size: 24px;
+}
+
+/* Faq Portion */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-top: 7px solid #333;
+}
+.faq h1{
+    font-size: 50px;
+    font-weight: 730;
+}
+.questions{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1250px;
+
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: "+";
+    font-size: 45px;
+    position: absolute;
+    right: 20px;
+    font-weight: lighter;
+    /* transition: transform 0.5s; */
+}
+input[type="radio"]{
+    display: none;
+}
+.questions .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.questions input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.questions input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq .signup input{
+    width: 380px;
+}
+.faq .signup button i{
+    margin-top: -3px;
+}
+.faq p{
+    font-size: 22px;
+    font-weight: 400;
+}
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 7px solid #333;
+    color: #777;
+}
+.footer h2 {
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .btn {
+    color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    background: #0f0f0f;
+    border: 1px solid #777;
+}
+.footer .btn img {
+    width: 7px;
+    margin-left: 10px;
+    margin-top: 4px;
+    color: #777;
+}
+.f-text {
+    font-size: 14px;
+    margin: 20px 0 10px;
+}
+.footer .btn i{
+    margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+    nav button {
+        padding: 5px 10px;
+        margin: 3px 1px 0 0;
+    }
+    .header{
+        margin-bottom: 0px;
+    }
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+        margin-top: -50px;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .header-content h1 span {
+        display: inline;
+        white-space: wrap;
+        width: 100%;
+    }
+    .signup button {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    .signup input {
+        padding: 16px 15px;
+        font-size: 12px;
+    }
+    .text-col, .image-col {
+        flex-basis: 100%;
+    }
+    .features h1 {
+        font-size: 30px;
+    }
+    .features p {
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .features .row {
+        padding: 10px 0;
+    }
+    .faq h1 {
+        font-size: 30px;
+    }
+    .faq .content{
+        margin: au;
+    }
+    .questions li p {
+        font-size: 14px;
+    }
+    .questions li label {
+        padding: 10px ;
+        font-size: 14px;
+    }
+    label::after {
+        font-size: 32px;
+    }
+    .footer .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .footer .col {
+        flex-basis: 50%;
+        margin-bottom: 10px;
+    }
+    .signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .signup input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .faq .signup input{
+        width: 95%;
+    }
+    .signup button i{
+        font-size: 25px
+    }
+    .header-content .signup button i{
+        margin-top: 0px;
+    }
+}
